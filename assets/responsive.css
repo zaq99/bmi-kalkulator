@@ -3,8 +3,11 @@
     main .container{
         flex-direction: column;
         height: 900px;
+        width: 90%;
         padding: 30px;
         margin-bottom: 100px;
+
+        overflow: auto;
     }
 
 }
@@ -30,6 +33,7 @@
 
     section:nth-child(2) #form, #results {
         border-radius: 20px;
+        padding: 20px;
     }
 
 
