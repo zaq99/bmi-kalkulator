@@ -3,12 +3,16 @@ let berat = document.getElementById('weight');
 let tinggi = document.getElementById('height');
 let buttonHitung = document.getElementById('buttons').onclick = jalankan
 
+// function jalankan ketika button di klik
 function jalankan(event){
+    // rubah data dari user menjadi float
     let dataBerat = parseFloat(berat.value);
     let dataTinggi = parseFloat(tinggi.value);
 
+    // rumus BMI
     let hasil = dataBerat / ((dataTinggi / 100) ** 2)
 
+    // cek kondisi
     if(hasil < 18.5){
         document.getElementById('results').children[0].innerText = 'Hasil = ' + hasil.toFixed(1);
         document.getElementById('results').children[1].innerHTML = 'Saat ini kamu <b>Kurang berat badan</b>, tapi kamu bisa meningkatkan berat badanmu dengan mengonsumsi makanan dan minuman sesuai kebutuh kalori harian kamu.'

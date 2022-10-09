@@ -1,0 +1,49 @@
+@media  screen and (max-width : 750px) {
+
+    main .container{
+        flex-direction: column;
+        height: 900px;
+        padding: 30px;
+        margin-bottom: 100px;
+    }
+
+}
+
+
+@media screen and (max-width : 512px) {
+    
+    main .container{
+        border-radius: 30px;
+    }
+
+    section:nth-child(1){
+        border-radius: 20px;
+    }
+
+    section:nth-child(1) > div{
+        border-radius: 20px;
+    }
+
+    section:nth-child(2){
+        border-radius: 20px;
+    }
+
+    section:nth-child(2) #form, #results {
+        border-radius: 20px;
+    }
+
+
+    section:nth-child(1) > h1{
+        text-align: right;
+        color: #fff;
+        font-size: 32px;
+    }
+
+    #form input{
+        width: 100%;
+    }
+
+    #form button{
+        width: 100%;
+    }
+}
